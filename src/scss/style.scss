@@ -7,7 +7,7 @@ $youtube: #bb0000;
 $vimeo: #1ab7ea;
 $tumblr: #32506d;
 $instagram: #bc2a8d;
-
+$link: #87a890;
 
 body {
     max-width: 800px;
@@ -66,6 +66,7 @@ h2 {
 
 a {
     font-size: 1.6rem;
+    color: $link;
 }
 
 .lists {
@@ -80,6 +81,10 @@ ul.lists {
 i {
     padding-right: .4rem;
     font-style: normal;
+}
+
+.fa-image {
+    color: #757575;
 }
 
 .fa-twitter {

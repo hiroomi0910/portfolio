@@ -61,6 +61,7 @@ h2 {
 
 a {
   font-size: 1.6rem;
+  color: #87a890;
 }
 
 .lists {
@@ -76,6 +77,10 @@ ul.lists {
 i {
   padding-right: .4rem;
   font-style: normal;
+}
+
+.fa-image {
+  color: #757575;
 }
 
 .fa-twitter::before {
