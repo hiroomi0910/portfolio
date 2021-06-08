@@ -102,6 +102,11 @@
       <div class="container-fluid" id="fh5co-image-grid">
         <div class="grid">
           <div class="grid-sizer"></div>
+
+          <!-- 画像があるだけ表示していくテスト -->
+          <div id="test"></div>
+
+
           <div class="grid-item item animate-box" data-animate-effect="fadeIn">
               <a href="images/img_1.jpg" class="image-popup" title="Collection #01">
               <div class="img-wrap">
@@ -312,12 +317,138 @@
               </div>
             </a>
           </div>
+          <div class="grid-item item animate-box" data-animate-effect="fadeIn">
+            <a href="images/img_16.jpg" class="image-popup" title="Collection #16">
+              <div class="img-wrap">
+                <img src="images/img_16.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="text-wrap">
+                <div class="text-inner popup">
+                  <div>
+                    <h2>Collection #16</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item item animate-box" data-animate-effect="fadeIn">
+            <a href="images/img_17.jpg" class="image-popup" title="Collection #17">
+              <div class="img-wrap">
+                <img src="images/img_17.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="text-wrap">
+                <div class="text-inner popup">
+                  <div>
+                    <h2>Collection #17</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item item animate-box" data-animate-effect="fadeIn">
+            <a href="images/img_18.jpg" class="image-popup" title="Collection #18">
+              <div class="img-wrap">
+                <img src="images/img_18.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="text-wrap">
+                <div class="text-inner popup">
+                  <div>
+                    <h2>Collection #18</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item item animate-box" data-animate-effect="fadeIn">
+            <a href="images/img_19.jpg" class="image-popup" title="Collection #19">
+              <div class="img-wrap">
+                <img src="images/img_19.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="text-wrap">
+                <div class="text-inner popup">
+                  <div>
+                    <h2>Collection #19</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item item animate-box" data-animate-effect="fadeIn">
+            <a href="images/img_20.jpg" class="image-popup" title="Collection #20">
+              <div class="img-wrap">
+                <img src="images/img_20.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="text-wrap">
+                <div class="text-inner popup">
+                  <div>
+                    <h2>Collection #20</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item item animate-box" data-animate-effect="fadeIn">
+            <a href="images/img_21.jpg" class="image-popup" title="Collection #21">
+              <div class="img-wrap">
+                <img src="images/img_21.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="text-wrap">
+                <div class="text-inner popup">
+                  <div>
+                    <h2>Collection #21</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item item animate-box" data-animate-effect="fadeIn">
+            <a href="images/img_22.jpg" class="image-popup" title="Collection #22">
+              <div class="img-wrap">
+                <img src="images/img_22.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="text-wrap">
+                <div class="text-inner popup">
+                  <div>
+                    <h2>Collection #22</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item item animate-box" data-animate-effect="fadeIn">
+            <a href="images/img_23.jpg" class="image-popup" title="Collection #23">
+              <div class="img-wrap">
+                <img src="images/img_23.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="text-wrap">
+                <div class="text-inner popup">
+                  <div>
+                    <h2>Collection #23</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item item animate-box" data-animate-effect="fadeIn">
+            <a href="images/img_24.jpg" class="image-popup" title="Collection #24">
+              <div class="img-wrap">
+                <img src="images/img_24.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="text-wrap">
+                <div class="text-inner popup">
+                  <div>
+                    <h2>Collection #24</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
 
     </div>
 
-  <!-- jQuery -->
+  <!-- jQuery v2.1.4 -->
   <script src="js/jquery.min.js"></script>
   <!-- jQuery Easing -->
   <script src="js/jquery.easing.1.3.js"></script>
@@ -340,5 +471,19 @@
   <!-- MAIN JS -->
   <script src="js/main.js"></script>
 
+  <!-- test -->
+  <script>
+    $(document).ready(function() {
+      var images = "images/";
+
+      $.ajax({
+        url: images,
+        success: function(data) {
+          $('div#test').append.images;
+        }
+      })
+
+    });
+  </script>
   </body>
 </html>
