@@ -7,13 +7,15 @@ $youtube: #bb0000;
 $vimeo: #1ab7ea;
 $tumblr: #32506d;
 $instagram: #bc2a8d;
-$link: #87a890;
+$threads: #1e3050;
+$link: #376e50;
+$hoverlink: #ff6600;
 
 body {
     max-width: 800px;
     margin: 40px auto;
     padding: .8rem;
-    font-family: FontAwesome, 'Font Awesome 5 Brands', 'Noto Sans Japanese', serif;
+    font-family: 'Noto Sans Japanese', sans-serif;
 }
 @media screen and (max-width: 768px) {
     body {
@@ -37,11 +39,11 @@ footer {
     overflow: hidden;
 }
 .slick-dots{
-    position: static;   
+    position: static;
 }
 .googlemap {
     position: relative;
-    padding-bottom: 25%; 
+    padding-bottom: 25%;
     height: 0;
     overflow: hidden;
 }
@@ -64,15 +66,25 @@ h2 {
     font-size: 1.8rem;
 }
 
-a {
+a.link {
     font-size: 1.6rem;
     color: $link;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: fit-content;
+    &:hover {
+        color: $hoverlink;
+    }
 }
 
 .lists {
     padding: .8rem;
     text-indent: .4rem;
     margin-left: 1.2rem;
+    li a span {
+        display: block;
+    }
 }
 ul.lists {
     list-style: circle;
@@ -97,4 +109,15 @@ i {
     &::before {
         color: $instagram;
     }
+}
+
+.fa-threads {
+    &::before {
+        color: $threads;
+    }
+}
+
+// 上書き
+.fa-fw {
+    width: auto;
 }

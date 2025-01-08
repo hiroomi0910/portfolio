@@ -2,7 +2,7 @@ body {
   max-width: 800px;
   margin: 40px auto;
   padding: .8rem;
-  font-family: FontAwesome, 'Font Awesome 5 Brands', 'Noto Sans Japanese', serif;
+  font-family: 'Noto Sans Japanese', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -59,15 +59,27 @@ h2 {
   font-size: 1.8rem;
 }
 
-a {
+a.link {
   font-size: 1.6rem;
-  color: #87a890;
+  color: #376e50;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: fit-content;
+}
+
+a.link:hover {
+  color: #ff6600;
 }
 
 .lists {
   padding: .8rem;
   text-indent: .4rem;
   margin-left: 1.2rem;
+}
+
+.lists li a span {
+  display: block;
 }
 
 ul.lists {
@@ -89,4 +101,12 @@ i {
 
 .fa-instagram::before {
   color: #bc2a8d;
+}
+
+.fa-threads::before {
+  color: #1e3050;
+}
+
+.fa-fw {
+  width: auto;
 }
